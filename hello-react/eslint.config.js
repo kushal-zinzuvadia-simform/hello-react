@@ -8,15 +8,18 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export default defineConfig([
   globalIgnores(['dist']),
   {
+    // Apply these rules only to TypeScript and TSX files
     files: ['**/*.{ts,tsx}'],
+
+    // Extend recommended configurations from different plugins
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
       reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
+      reactRefresh.configs.vite,    // React fast refresh with Vite
     ],
     languageOptions: {
-      globals: globals.browser,
+      globals: globals.browser,       // Add browser global variables automatically
     },
   },
 ])
