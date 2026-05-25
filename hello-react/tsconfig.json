@@ -2,21 +2,18 @@
 	"compilerOptions": {
 		// File Layout
 		"rootDir": "./src",
-		"outDir": "./dist",
+		"outDir": "./dist-types",
 
 		// Environment Settings
 		"module": "esnext",
 		"target": "esnext",
 		// "types": [],
-		// For nodejs:
 		"lib": ["esnext", "DOM", "DOM.Iterable"],
-		"types": ["node"],
-		// and npm install -D @types/node
 
 		// Other Outputs
 		"sourceMap": true,
-		"declaration": true,
-		"declarationMap": true,
+		"declaration": false,
+		"declarationMap": false,
 
 		// Stricter Typechecking Options
 		"noUncheckedIndexedAccess": true,
