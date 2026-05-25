@@ -12,7 +12,7 @@ module.exports = {
 	resolve: {
 		extensions: [".tsx", ".ts", ".js"],
 	},
-	devtool: "source-map",
+	devtool: "hidden-source-map",
 	module: {
 		rules: [
 			{
