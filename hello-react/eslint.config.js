@@ -19,7 +19,7 @@ export default defineConfig([
       reactRefresh.configs.vite,    // React fast refresh with Vite
     ],
     languageOptions: {
-      globals: globals.browser,       // Add browser global variables automatically           
+      globals: globals.browser,       // Add browser global variables automatically
     },
   },
 ])
